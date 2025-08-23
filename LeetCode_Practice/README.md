@@ -9,3 +9,4 @@ This workspace will include the practice on LeetCode website.
 | 344 | Reverse String | Done | n/2 | 2025/08/21 |
 | 125 | Valid Palindrome | Done | n | 2025/08/21 |
 | 206 | Reverse Linked List | Done | n | 2025/08/23 |
+| 21 | Merge Two Sorted Lists | Done | n | 2025/08/23 |
