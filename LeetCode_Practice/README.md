@@ -10,3 +10,5 @@ This workspace will include the practice on LeetCode website.
 | 125 | Valid Palindrome | Done | n | 2025/08/21 |
 | 206 | Reverse Linked List | Done | n | 2025/08/23 |
 | 21 | Merge Two Sorted Lists | Done | n | 2025/08/23 |
+| 141 | Linked List Cycle | Done | n | 2025/08/23 | 
+| 141 | Linked List Cycle || | Done | n | 2025/08/23 | 
