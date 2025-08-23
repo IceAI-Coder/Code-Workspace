@@ -8,3 +8,4 @@ This workspace will include the practice on LeetCode website.
 | 26 | Remove Duplicates from Sorted Array | Done | n | 2025/08/21 |
 | 344 | Reverse String | Done | n/2 | 2025/08/21 |
 | 125 | Valid Palindrome | Done | n | 2025/08/21 |
+| 206 | Reverse Linked List | Done | n | 2025/08/23 |
