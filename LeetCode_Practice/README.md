@@ -7,8 +7,8 @@ This workspace will include the practice on LeetCode website.
 | ID  | Title  | Status | Target Time Complexity | Solved Date | Link |
 | :--: | :--- | :----: | :-------------: | :---------: | :--: |
 | 1   | Two Sum | V | O(n²) brute force | 2025/08/20 | [Link](https://leetcode.com/problems/two-sum/) |
-| 26  | Remove Duplicates from Sorted Array | V  | O(n) | 2025/08/21 | [Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) |
-| 344 | Reverse String | V | O(n) | | 2025/08/21 [Link](https://leetcode.com/problems/reverse-string/) |
+| 26  | Remove Duplicates from Sorted Array | V | O(n) | 2025/08/21 | [Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) |
+| 344 | Reverse String | V | O(n) | 2025/08/21 | [Link](https://leetcode.com/problems/reverse-string/) |
 | 125 | Valid Palindrome | V | O(n) | 2025/08/21 | [Link](https://leetcode.com/problems/valid-palindrome/) |
 
 ---
