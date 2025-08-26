@@ -32,7 +32,10 @@ bool isValid(char* s) {
             else{
                 top--;
             }
+<<<<<<< HEAD
         }
+=======
+>>>>>>> main/main
         s++;
     }
     return top==-1;  // Fix#4: Removed the if to make code be more clean
