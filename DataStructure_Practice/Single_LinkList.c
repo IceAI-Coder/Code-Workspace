@@ -95,19 +95,24 @@ void push_back(LinkedList* list, int value){
     
     // setup list
     // find the list[size-1]
-    ListNode* ptr = list->head;
-    for(int i=1; i<=list->size-1; i++){
-        ptr = ptr->next;
+    // corner case size = 0  Issue#1
+    if(list->head == NULL){
+        list->head = newData;
     }
-    // setup last node
-    ptr->next = newData;
-
+    else{
+        ListNode* ptr = list->head;
+        for(int i=1; i<=list->size-1; i++){
+            ptr = ptr->next;
+        }
+        // setup last node
+        ptr->next = newData;
+    }
     // setup list
     list->size++;
 }
 void insert_at(LinkedList* list, int index, int value){
     // insert node before list[index]
-    // if want to insert in the last, index == size
+    // cannot insert after list[size-1]
     // data validation first
     if(!index_validation(list, index)){
         return;
@@ -157,7 +162,7 @@ void pop_front(LinkedList* list){
 }
 void pop_back(LinkedList* list){
     // Data validation
-    if(size <= 0){
+    if(list->size <= 0){
         printf("Cannot pop_back empty list. No action performed.\n");
         return;
     }
@@ -220,7 +225,7 @@ int get_at(LinkedList* list, int index){
 
     // find list[index]
     ListNode* ptr = list->head;
-    for(int i=1;i<=index; i++){
+    for(int i=0;i<index; i++){
         ptr = ptr->next;
     }
     return ptr->val;
@@ -248,7 +253,7 @@ void set_at(LinkedList* list, int index, int new_value){
     }
     // find list[index]
     ListNode* ptr = list->head;
-    for(int i=1; i<=index; i++){
+    for(int i=0; i<index; i++){
         ptr = ptr->next;
     }
     ptr->val = new_value;
