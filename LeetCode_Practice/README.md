@@ -25,13 +25,31 @@ This workspace will include the practice on LeetCode website.
 ---
 
 ### Stack & Queue
-| ID  | Title  | Status | Target Time Complexity | Solved Date | Link |
-| :--: | :--- | :----: | :-------------: | :---------: | :--: |
-| 20  | Valid Parentheses | V | O(n) | 2025/08/26 | [Link](https://leetcode.com/problems/valid-parentheses/) |
-| 155 | Min Stack | V | O(1) per op | 2025/08/27 | [Link](https://leetcode.com/problems/min-stack/) |
-| 232 | Implement Queue using Stacks | V | Amortized O(1) per op | 2025/08/27 | [Link](https://leetcode.com/problems/implement-queue-using-stacks/) |
-| 225 | Implement Stack using Queues |  | O(n) | | [Link](https://leetcode.com/problems/implement-stack-using-queues/) |
-
+| ID  | Title  | Status | Target Time Complexity | Difficulty  | Solved Date | Link |
+| :--: | :--- | :----: | :-------------: | :---------: | :--: | :--: |
+| 20  | Valid Parentheses | V | O(n) | Easy | 2025/08/26 | [Link](https://leetcode.com/problems/valid-parentheses/) |
+| 155 | Min Stack | V | O(1) per op | Medium | 2025/08/27 | [Link](https://leetcode.com/problems/min-stack/) |
+| 232 | Implement Queue using Stacks | V | Amortized O(1) per op | Easy | 2025/08/27 | [Link](https://leetcode.com/problems/implement-queue-using-stacks/) |
+| 739 | Daily Temperatures |  | O(n) | Medium |  | [Link](https://leetcode.com/problems/daily-temperatures/) |
+| 496 | Next Greater Element I |  | O(n) | Easy |  | [Link](https://leetcode.com/problems/next-greater-element-i/) |
+| 503 | Next Greater Element II |  | O(n) | Medium |  | [Link](https://leetcode.com/problems/next-greater-element-ii/) |
+| 84  | Largest Rectangle in Histogram |  | O(n) | Hard |  | [Link](https://leetcode.com/problems/largest-rectangle-in-histogram/) |
+| 85  | Maximal Rectangle |  | O(m*n) | Hard |  | [Link](https://leetcode.com/problems/maximal-rectangle/) |
+| 901 | Online Stock Span |  | O(n) amortized | Medium |  | [Link](https://leetcode.com/problems/online-stock-span/) |
+| 150 | Evaluate Reverse Polish Notation |  | O(n) | Medium |  | [Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |
+| 224 | Basic Calculator |  | O(n) | Hard |  | [Link](https://leetcode.com/problems/basic-calculator/) |
+| 227 | Basic Calculator II |  | O(n) | Medium |  | [Link](https://leetcode.com/problems/basic-calculator-ii/) |
+| 772 | Basic Calculator III |  | O(n) | Hard |  | [Link](https://leetcode.com/problems/basic-calculator-iii/) |
+| 239 | Sliding Window Maximum |  | O(n) | Hard |  | [Link](https://leetcode.com/problems/sliding-window-maximum/) |
+| 622 | Design Circular Queue |  | O(1) per operation | Medium |  | [Link](https://leetcode.com/problems/design-circular-queue/) |
+| 641 | Design Circular Deque |  | O(1) per operation | Medium |  | [Link](https://leetcode.com/problems/design-circular-deque/) |
+| 346 | Moving Average from Data Stream |  | O(1) per operation | Easy |  | [Link](https://leetcode.com/problems/moving-average-from-data-stream/) |
+| 933 | Number of Recent Calls |  | O(1) amortized | Easy |  | [Link](https://leetcode.com/problems/number-of-recent-calls/) |
+| 102 | Binary Tree Level Order Traversal |  | O(n) | Medium |  | [Link](https://leetcode.com/problems/binary-tree-level-order-traversal/) |
+| 200 | Number of Islands |  | O(m*n) | Medium |  | [Link](https://leetcode.com/problems/number-of-islands/) |
+| 994 | Rotting Oranges |  | O(m*n) | Medium |  | [Link](https://leetcode.com/problems/rotting-oranges/) |
+| 207 | Course Schedule |  | O(V+E) | Medium |  | [Link](https://leetcode.com/problems/course-schedule/) |
+| 210 | Course Schedule II |  | O(V+E) | Medium |  | [Link](https://leetcode.com/problems/course-schedule-ii/) |
 ---
 
 ### Hash Table
