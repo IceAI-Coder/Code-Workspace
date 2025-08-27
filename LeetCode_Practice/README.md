@@ -27,8 +27,8 @@ This workspace will include the practice on LeetCode website.
 ### Stack & Queue
 | ID  | Title  | Status | Target Time Complexity | Solved Date | Link |
 | :--: | :--- | :----: | :-------------: | :---------: | :--: |
-| 20  | Valid Parentheses |  | O(n) | | [Link](https://leetcode.com/problems/valid-parentheses/) |
-| 155 | Min Stack |  | O(1) per op | | [Link](https://leetcode.com/problems/min-stack/) |
+| 20  | Valid Parentheses | V | O(n) | 2025/08/26 | [Link](https://leetcode.com/problems/valid-parentheses/) |
+| 155 | Min Stack | O | O(1) per op | 2025/08/26 | [Link](https://leetcode.com/problems/min-stack/) |
 | 232 | Implement Queue using Stacks |  | Amortized O(1) per op | | [Link](https://leetcode.com/problems/implement-queue-using-stacks/) |
 | 225 | Implement Stack using Queues |  | O(n) | | [Link](https://leetcode.com/problems/implement-stack-using-queues/) |
 
