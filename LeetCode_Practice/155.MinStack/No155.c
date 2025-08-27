@@ -4,78 +4,63 @@
 #include <stdio.h>
 
 typedef struct Node{
-    int val;
-    struct Node* prev;
+    int data;
+    struct Node* next;  // Fix Issue#1: It seems normally, even it point to previous node. Since that featuer is most similar like point to next node, the variable name shall be next;
+    struct Node* prevMinNode;  // Add the feature to maintain the minNode list. If min node be pop out, could refer to prevMin.
 } Node;
 
 typedef struct {
-    Node* topNode;
-    Node* minNode;
-    int top;
-    int minValue;
+    // Maintain top information
+    Node* top;
+    // Maintain min information
+    Node* minNode; // To store the latest min node info.
 } MinStack;
 
 MinStack* minStackCreate() {
     MinStack* output = (MinStack*)malloc(sizeof(MinStack));
-    output->topNode = NULL;
+    output->top = NULL;
     output->minNode = NULL;
-    output->top = -1;
-    output->minValue = -1;  // follow the question, the minValue will not be call when stack is empty. It will be update later.
     return output;
 }
 
 void minStackPush(MinStack* obj, int val) {
-    // Setup node
-    Node* node = (Node*)malloc(sizeof(Node));
-    node->val = val;
-    node->prev = obj->topNode;
-    // Update obj
-    if(obj->top == -1){
-        obj->minNode = node;
-        obj->minValue = val;
+    // Setup newNode
+    Node* newNode = (Node*)malloc(sizeof(Node));
+    newNode->data = val;
+    newNode->next = obj->top;
+    newNode->prevMinNode = NULL;
+
+    // Update minNode info.
+    if(obj->top == NULL || obj->minNode->data >= val){  // using equal to avoid the local min is maintained. e.g. [1, 0, 0] -> pop -> [1, 0]
+        newNode->prevMinNode = obj->minNode;
+        obj->minNode = newNode;
     }
-    else{
-        if(val < obj->minValue){
-            obj->minNode = node;
-            obj->minValue = val;
-        }
-    }
-    obj->topNode = node;
-    obj->top++;
+    // Update top info.
+    obj->top = newNode;
 }
 
 void minStackPop(MinStack* obj) {
-    // Not sure what is O(1) solution at this moment... #TODO
-
-    Node* to_remvoe = obj->topNode;
-    obj->topNode = to_remvoe->prev;
-    free(to_remvoe);
-    obj->top--;
-    // need to recaculate minValue
-    if(to_remvoe == obj->minNode && obj->top!=-1){
-        Node* curr = obj->topNode;
-        obj->minValue = curr->val;
-        obj->minNode = curr;
-        while(curr != NULL){
-            if(curr->val < obj->minValue){
-                obj->minValue = curr->val;
-                obj->minNode = curr;
-            }
-            curr = curr->prev;
-        }
+    Node* to_remove = obj->top;
+    // Update minNode info.
+    if(to_remove->prevMinNode != NULL){
+        obj->minNode = to_remove->prevMinNode;
     }
+    // Update top info.
+    obj->top = to_remove->next;
+
+    free(to_remove);
 }
 
 int minStackTop(MinStack* obj) {
-    return obj->topNode->val;
+    return obj->top->data;
 }
 
 int minStackGetMin(MinStack* obj) {
-    return obj->minValue;
+    return obj->minNode->data;
 }
 
 void minStackFree(MinStack* obj) {
-    while(obj->top != -1){
+    while(obj->top){
         minStackPop(obj);
     }
     free(obj);
@@ -84,12 +69,19 @@ void minStackFree(MinStack* obj) {
 
 int main(){
     MinStack* obj = minStackCreate();
-    minStackPush(obj, 5); 
-    int param_3 = minStackTop(obj);
-    int param_4 = minStackGetMin(obj);
-    minStackPop(obj); 
-    printf("%d\n", param_3);  // 5
-    printf("%d\n", param_4);  // 5
+    minStackPush(obj, 5); // [5]
+    minStackPush(obj, 3); // [5, 3]
+    printf("%d\n", minStackGetMin(obj));  // 3
+    minStackPush(obj, 1); // [5, 3 ,1]
+    printf("%d\n", minStackGetMin(obj));  // 1
+    minStackPush(obj, 3); // [5, 3 ,1, 3]
+    printf("%d\n", minStackGetMin(obj));  // 1
+    minStackPush(obj, 1); // [5, 3 ,1, 3, 1]
+    printf("%d\n", minStackGetMin(obj));  // 1
+
+    minStackPop(obj);  // [5, 3 ,1, 3]
+    printf("%d\n", minStackTop(obj));     // 3
+    printf("%d\n", minStackGetMin(obj));  // 1
 
     minStackFree(obj);
     return 0;
