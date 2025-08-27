@@ -3,39 +3,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-typedef struct Node{
-    int index;
-    int data;
-    struct Node* next;
-}Node;
-
-typedef struct Stack{
-    Node* top;
-} Stack;
-
-int stack_pop(Stack* obj){
-    int index = obj->top->index;
-    Node* to_remove = obj->top;
-    obj->top = to_remove->next;
-    free(to_remove);
-    return index;
-}
-
-void stack_push(Stack* obj, int index, int val){
-    Node* newData = (Node*)malloc(sizeof(Node));
-    newData->index = index;
-    newData->data = val;
-    newData->next = obj->top;
-
-    obj->top = newData;
-}
-
+// Improve with array version, since even time complexity is O(n). It's still very slow due to malloc/free.
 int* dailyTemperatures(int* temperatures, int temperaturesSize, int* returnSize) {
     *returnSize = temperaturesSize;
+
     int* output = (int*)malloc(sizeof(int)*temperaturesSize);
-    
-    Stack* obj = (Stack*)malloc(sizeof(Stack));
-    obj->top =  NULL;
+    int* stack = (int*)malloc(sizeof(int)*temperaturesSize);  // Only save index
+    int top = -1;
 
     for(int i=0; i<temperaturesSize; i++){
         output[i] = 0;  //init
@@ -47,17 +21,18 @@ int* dailyTemperatures(int* temperatures, int temperaturesSize, int* returnSize)
         //   Else
         //     push stack
 
-        if(obj->top == NULL){
-            stack_push(obj, i, temperatures[i]);
+        if(top == -1){
+            stack[++top] = i;
         }
         else{
-            while(obj->top!=NULL && obj->top->data < temperatures[i]){
-                int idx = stack_pop(obj);
-                output[idx] = i - idx;
+            while(top!=-1 && temperatures[stack[top]] < temperatures[i]){
+                output[stack[top]] = i - stack[top];
+                top--;
             }
-            stack_push(obj, i, temperatures[i]);
+            stack[++top] = i;
         }
     }
+    free(stack);
     return output;
 }
 
@@ -74,7 +49,5 @@ int main(){
         }
     }
     printf("]\n");
-
-
     return 0;
 }
