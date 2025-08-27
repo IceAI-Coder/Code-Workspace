@@ -32,7 +32,7 @@ This workspace will include the practice on LeetCode website.
 | 232 | Implement Queue using Stacks | V | Amortized O(1) per op | Easy | 2025/08/27 | [Link](https://leetcode.com/problems/implement-queue-using-stacks/) |
 | 739 | Daily Temperatures | V | O(n) | Medium | 2025/08/27 | [Link](https://leetcode.com/problems/daily-temperatures/) |
 | 496 | Next Greater Element I | V | O(m+n) | Easy | 2025/08/27 | [Link](https://leetcode.com/problems/next-greater-element-i/) |
-| 503 | Next Greater Element II |  | O(n) | Medium |  | [Link](https://leetcode.com/problems/next-greater-element-ii/) |
+| 503 | Next Greater Element II | V | O(n) | Medium | 2025/08/27 | [Link](https://leetcode.com/problems/next-greater-element-ii/) |
 | 84  | Largest Rectangle in Histogram |  | O(n) | Hard |  | [Link](https://leetcode.com/problems/largest-rectangle-in-histogram/) |
 | 85  | Maximal Rectangle |  | O(m*n) | Hard |  | [Link](https://leetcode.com/problems/maximal-rectangle/) |
 | 901 | Online Stock Span |  | O(n) amortized | Medium |  | [Link](https://leetcode.com/problems/online-stock-span/) |
