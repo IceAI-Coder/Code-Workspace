@@ -35,7 +35,7 @@ This workspace will include the practice on LeetCode website.
 | 503 | Next Greater Element II | V | O(n) | Medium | 2025/08/27 | [Link](https://leetcode.com/problems/next-greater-element-ii/) |
 | 84  | Largest Rectangle in Histogram | V | O(n) | Hard | 2025/08/28 | [Link](https://leetcode.com/problems/largest-rectangle-in-histogram/) |
 | 85  | Maximal Rectangle |  | O(m*n) | Hard |  | [Link](https://leetcode.com/problems/maximal-rectangle/) |
-| 901 | Online Stock Span |  | O(n) amortized | Medium |  | [Link](https://leetcode.com/problems/online-stock-span/) |
+| 901 | Online Stock Span | V | O(n) amortized | Medium | 2025/08/30 | [Link](https://leetcode.com/problems/online-stock-span/) |
 | 150 | Evaluate Reverse Polish Notation |  | O(n) | Medium |  | [Link](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |
 | 224 | Basic Calculator |  | O(n) | Hard |  | [Link](https://leetcode.com/problems/basic-calculator/) |
 | 227 | Basic Calculator II |  | O(n) | Medium |  | [Link](https://leetcode.com/problems/basic-calculator-ii/) |
