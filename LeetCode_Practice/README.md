@@ -43,7 +43,7 @@ Arrays and Strings are foundational for two pointers, sliding window, prefix sum
 | 344 | Reverse String                             | O(n)         | Easy       |    AC    | 2025/08/21  | [Link](https://leetcode.com/problems/reverse-string/) |
 | 125 | Valid Palindrome                           | O(n)         | Easy       |    AC    | 2025/08/21  | [Link](https://leetcode.com/problems/valid-palindrome/) |
 | 3   | Longest Substring Without Repeating Chars  | O(n)         | Medium     |          |             | [Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
-| 11  | Container With Most Water                  | O(n)         | Medium     |          |             | [Link](https://leetcode.com/problems/container-with-most-water/) |
+| 11  | Container With Most Water                  | O(n)         | Medium     |    AC    | 2025/08/30  | [Link](https://leetcode.com/problems/container-with-most-water/) |
 | 15  | 3Sum                                       | O(n^2)       | Medium     |          |             | [Link](https://leetcode.com/problems/3sum/) |
 | 238 | Product of Array Except Self               | O(n)         | Medium     |          |             | [Link](https://leetcode.com/problems/product-of-array-except-self/) |
 | 76  | Minimum Window Substring                   | O(n)         | Hard       |          |             | [Link](https://leetcode.com/problems/minimum-window-substring/) |
