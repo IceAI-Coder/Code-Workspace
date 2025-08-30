@@ -42,14 +42,11 @@ Arrays and Strings are foundational for two pointers, sliding window, prefix sum
 | 26  | Remove Duplicates from Sorted Array        | O(n)         | Easy       |    AC    | 2025/08/21  | [Link](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) |
 | 344 | Reverse String                             | O(n)         | Easy       |    AC    | 2025/08/21  | [Link](https://leetcode.com/problems/reverse-string/) |
 | 125 | Valid Palindrome                           | O(n)         | Easy       |    AC    | 2025/08/21  | [Link](https://leetcode.com/problems/valid-palindrome/) |
-| 3   | Longest Substring Without Repeating Chars  | O(n)         | Medium     |          |             | [Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
 | 11  | Container With Most Water                  | O(n)         | Medium     |          |             | [Link](https://leetcode.com/problems/container-with-most-water/) |
 | 15  | 3Sum                                       | O(n^2)       | Medium     |          |             | [Link](https://leetcode.com/problems/3sum/) |
 | 238 | Product of Array Except Self               | O(n)         | Medium     |          |             | [Link](https://leetcode.com/problems/product-of-array-except-self/) |
-| 76  | Minimum Window Substring                   | O(n)         | Hard       |          |             | [Link](https://leetcode.com/problems/minimum-window-substring/) |
 | 121 | Best Time to Buy and Sell Stock            | O(n)         | Easy       |          |             | [Link](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) |
 | 53  | Maximum Subarray                           | O(n)         | Easy       |          |             | [Link](https://leetcode.com/problems/maximum-subarray/) |
-| 567 | Permutation in String                      | O(n)         | Medium     |          |             | [Link](https://leetcode.com/problems/permutation-in-string/) |
 
 ---
 
@@ -129,6 +126,9 @@ Hashing enables near constant-time lookups, frequency counting, and deduplicatio
 | 146 | LRU Cache                         | O(1) per op | Medium     |        |             | [Link](https://leetcode.com/problems/lru-cache/) |
 | 128 | Longest Consecutive Sequence      | O(n)        | Hard       |        |             | [Link](https://leetcode.com/problems/longest-consecutive-sequence/) |
 | 202 | Happy Number                      | O(n)        | Easy       |        |             | [Link](https://leetcode.com/problems/happy-number/) |
+| 3   | Longest Substring Without Repeating Chars  | O(n)         | Medium     |          |             | [Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
+| 567 | Permutation in String                      | O(n)         | Medium     |          |             | [Link](https://leetcode.com/problems/permutation-in-string/) |
+| 76  | Minimum Window Substring                   | O(n)         | Hard       |          |             | [Link](https://leetcode.com/problems/minimum-window-substring/) |
 
 ---
 
