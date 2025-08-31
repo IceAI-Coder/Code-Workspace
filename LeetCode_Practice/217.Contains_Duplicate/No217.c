@@ -6,43 +6,29 @@
 
 #define HASH_TABLE_MAX 100003  // Since the problem will have only 10^5 numsSize.
 
+// Following the problems, 1 <= nums.length <= 10^5
 typedef struct Node{
-    int data;
-    struct Node* next;
+    int key;
+    bool used;
 }Node;
 
 bool containsDuplicate(int* nums, int numsSize) {
-    Node* hashTable[HASH_TABLE_MAX];
-    for(int i=0; i<HASH_TABLE_MAX; i++){
-        hashTable[i] = NULL;
-    }
+    Node* hashTable = (Node*)calloc(HASH_TABLE_MAX, sizeof(Node));
 
     int modResult;
-    Node* newData;
-    Node* ptr;
     for(int i=0; i<numsSize; i++){
-        modResult = abs(nums[i]) % 100003;
-        newData = (Node*)malloc(sizeof(Node));
-        newData->data = nums[i];
-            
-        if(hashTable[modResult] == NULL){
-            newData->next = NULL;   
-            hashTable[modResult] = newData;
-        }
-        else{
-            // Insert first then compare if duplicate
-            newData->next = hashTable[modResult];
-            hashTable[modResult] = newData;
-            ptr = newData->next;
-            while(ptr!=NULL){
-                if(nums[i]==ptr->data){
-                    return true;
-                }
-                ptr = ptr->next;
+        modResult = (nums[i] % HASH_TABLE_MAX + HASH_TABLE_MAX)%HASH_TABLE_MAX;  // Since abs will duplicate collision, this shall be prevented.
+        while(hashTable[modResult].used){
+            if(hashTable[modResult].key == nums[i]){
+                free(hashTable);
+                return true;
             }
+            modResult = (modResult + 1) % HASH_TABLE_MAX;
         }
+        hashTable[modResult].key = nums[i];
+        hashTable[modResult].used = true;
     }
-
+    free(hashTable);
     return false;
 }
 
