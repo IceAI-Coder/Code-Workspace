@@ -29,11 +29,6 @@ Each section includes:
 
 Arrays and Strings are foundational for two pointers, sliding window, prefix sums, and hashing-based techniques.
 
-**Concept Resources**
-- MIT OpenCourseWare – Introduction to Algorithms (arrays, strings, asymptotics): https://ocw.mit.edu
-- VisuAlgo – Arrays and string operations visualization: https://visualgo.net
-- UC Berkeley CS61B – Array-based structures and iteration: https://cs61b.org
-
 ### Problem List
 
 | ID  | Title                                      | Complexity   | Difficulty | Status   | Solved Date | Link |
@@ -54,11 +49,6 @@ Arrays and Strings are foundational for two pointers, sliding window, prefix sum
 
 Linked Lists build intuition for pointers, mutation, recursion, and in-place algorithms.
 
-**Concept Resources**
-- CS50 – Linked Lists (memory, nodes, pointers): https://cs50.harvard.edu
-- OpenDSA – Linked Lists (visual explanations): https://opendsa-server.cs.vt.edu
-- CMU 15-122 – Linked structures: https://www.cs.cmu.edu
-
 ### Problem List
 
 | ID  | Title                              | Complexity | Difficulty | Status   | Solved Date | Link |
@@ -78,11 +68,6 @@ Linked Lists build intuition for pointers, mutation, recursion, and in-place alg
 ## Stack & Queue
 
 Stacks and Queues support parsing, evaluation, monotonic techniques, BFS, and sliding windows.
-
-**Concept Resources**
-- CMU 15-122 – Stacks and Queues: https://www.cs.cmu.edu
-- OpenDSA – Stacks and Queues: https://opendsa-server.cs.vt.edu
-- VisuAlgo – Stack and Queue: https://visualgo.net
 
 ### Problem List
 
@@ -108,17 +93,15 @@ Stacks and Queues support parsing, evaluation, monotonic techniques, BFS, and sl
 Hashing enables near constant-time lookups, frequency counting, and deduplication. Core to many linear-time solutions.
 
 **Concept Resources**
-- Princeton Algorithms – Hashing (separate chaining, linear probing): https://algs4.cs.princeton.edu/34hash/
-- UC Berkeley CS61B – Hash maps and hashing: https://cs61b.org
-- OpenDSA – Hash Tables: https://opendsa-server.cs.vt.edu
+- YouTube 【C++ 資料結構與演算法】雜湊表 (hash table): https://youtu.be/O4dGJZ4J0Bk
 
 ### Problem List
 
 | ID  | Title                             | Complexity  | Difficulty | Status | Solved Date | Link |
 |-----|-----------------------------------|-------------|------------|--------|-------------|------|
-| 217 | Contains Duplicate                | O(n)        | Easy       |        |             | [Link](https://leetcode.com/problems/contains-duplicate/) |
+| 217 | Contains Duplicate                | O(n)        | Easy       |    AC  | 2025/08/31  | [Link](https://leetcode.com/problems/contains-duplicate/) |
 | 242 | Valid Anagram                     | O(n)        | Easy       |        |             | [Link](https://leetcode.com/problems/valid-anagram/) |
-| 1   | Two Sum                           | O(n)        | Easy       |    AC  | 2025/08/20  | [Link](https://leetcode.com/problems/two-sum/) |
+| 1   | Two Sum                           | O(n)        | Easy       |        |             | [Link](https://leetcode.com/problems/two-sum/) |
 | 49  | Group Anagrams                    | O(n·k·logk) | Medium     |        |             | [Link](https://leetcode.com/problems/group-anagrams/) |
 | 347 | Top K Frequent Elements           | O(n log k)  | Medium     |        |             | [Link](https://leetcode.com/problems/top-k-frequent-elements/) |
 | 36  | Valid Sudoku                      | O(1)        | Medium     |        |             | [Link](https://leetcode.com/problems/valid-sudoku/) |
