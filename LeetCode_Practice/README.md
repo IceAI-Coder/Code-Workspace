@@ -101,7 +101,7 @@ Hashing enables near constant-time lookups, frequency counting, and deduplicatio
 |-----|-----------------------------------|-------------|------------|--------|-------------|------|
 | 217 | Contains Duplicate                | O(n)        | Easy       |    AC  | 2025/08/31  | [Link](https://leetcode.com/problems/contains-duplicate/) |
 | 242 | Valid Anagram                     | O(n)        | Easy       |    AC  | 2025/08/31  | [Link](https://leetcode.com/problems/valid-anagram/) |
-| 1   | Two Sum                           | O(n)        | Easy       |        |             | [Link](https://leetcode.com/problems/two-sum/) |
+| 1   | Two Sum                           | O(n)        | Easy       |    AC  | 2025/08/31  | [Link](https://leetcode.com/problems/two-sum/) |
 | 49  | Group Anagrams                    | O(n·k·logk) | Medium     |        |             | [Link](https://leetcode.com/problems/group-anagrams/) |
 | 347 | Top K Frequent Elements           | O(n log k)  | Medium     |        |             | [Link](https://leetcode.com/problems/top-k-frequent-elements/) |
 | 36  | Valid Sudoku                      | O(1)        | Medium     |        |             | [Link](https://leetcode.com/problems/valid-sudoku/) |
