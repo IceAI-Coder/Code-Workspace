@@ -106,7 +106,7 @@ Hashing enables near constant-time lookups, frequency counting, and deduplicatio
 | 347 | Top K Frequent Elements           | O(n log k)  | Medium     |    AC  | 2025/09/06  | [Link](https://leetcode.com/problems/top-k-frequent-elements/) |
 | 36  | Valid Sudoku                      | O(1)        | Medium     |    AC  | 2025/09/06  | [Link](https://leetcode.com/problems/valid-sudoku/) |
 | 560 | Subarray Sum Equals K             | O(n)        | Medium     |    AC  | 2025/09/07  | [Link](https://leetcode.com/problems/subarray-sum-equals-k/) |
-| 146 | LRU Cache                         | O(1) per op | Medium     |        |             | [Link](https://leetcode.com/problems/lru-cache/) |
+| 146 | LRU Cache                         | O(1) per op | Medium     |    AC  | 2025/09/07  | [Link](https://leetcode.com/problems/lru-cache/) |
 | 128 | Longest Consecutive Sequence      | O(n)        | Hard       |        |             | [Link](https://leetcode.com/problems/longest-consecutive-sequence/) |
 | 202 | Happy Number                      | O(n)        | Easy       |        |             | [Link](https://leetcode.com/problems/happy-number/) |
 | 3   | Longest Substring Without Repeating Chars  | O(n)         | Medium     |          |             | [Link](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
