@@ -129,7 +129,7 @@ Binary Trees underpin recursion patterns, DFS/BFS traversals, and many path/stat
 | ID  | Title                                   | Complexity | Difficulty | Status | Solved Date | Link |
 |-----|-----------------------------------------|------------|------------|--------|-------------|------|
 | 104 | Maximum Depth of Binary Tree            | O(n)       | Easy       |   AC   | 2025/09/09  | [Link](https://leetcode.com/problems/maximum-depth-of-binary-tree/) |
-| 100 | Same Tree                               | O(n)       | Easy       |        |             | [Link](https://leetcode.com/problems/same-tree/) |
+| 100 | Same Tree                               | O(n)       | Easy       |   AC   | 2025/09/09  | [Link](https://leetcode.com/problems/same-tree/) |
 | 226 | Invert Binary Tree                      | O(n)       | Easy       |        |             | [Link](https://leetcode.com/problems/invert-binary-tree/) |
 | 101 | Symmetric Tree                          | O(n)       | Easy       |        |             | [Link](https://leetcode.com/problems/symmetric-tree/) |
 | 102 | Binary Tree Level Order Traversal       | O(n)       | Medium     |        |             | [Link](https://leetcode.com/problems/binary-tree-level-order-traversal/) |
